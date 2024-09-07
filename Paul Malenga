@@ -1,0 +1,49 @@
+a_counters = {'yes':0,'no':0}
+print("Note that wrong response will not be counted!!")
+print(" ")
+while True:
+    g=input("Enter your name or type 'done' to finish:").lower()
+    if g=='done':
+        break
+    h=input("Enter your email address:")
+    i=int(input("Enter your mobile number:"))
+    a= input("Will you attend? (yes/no):").lower()
+    if a=='yes' or a=='no':
+        a== True
+    else:
+        print("Invalid response 😥😥😥.please select 'yes' or 'no'⚠️⚠️⚠️")
+    if a in a_counters:
+        a_counters[a] +=1
+    if a =='yes':
+        print("Welcome",g,"to the meeting")
+print("Total attending =",a_counters['yes'])
+print("Total not attending =",a_counters['no'])
+b = a_counters['yes']
+c = a_counters['no']
+d= b+c
+print("Total who respond =",d)
+def factorial(b):
+    if b== 0 or b == 1:
+        return 1
+    else:
+        return b*factorial(b-1)
+print("There are",factorial(b),"ways of arranging those who attend the meeting in a line")
+print("There are",factorial(b-1),"ways of arranging those who attend the meeting around a circular table")
+e = b%2
+if e ==0:
+    print("For those who attend,atleast",b//2,"are of the same sex.That is atleast",(b//2),"are Men or atleast",(b//2),"are women")
+else:
+    print("For those who attend,atleast",(b//2)+1,"are of the same sex.That is atleast",(b//2)+1,"are Men or atleast",(b//2)+1,"are women")
+
+
+
+
+
+
+
+
+
+
+
+
+
